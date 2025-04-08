@@ -1,6 +1,8 @@
 class MOS6502:
     def __init__(self):
-        
+        self.reset()
+
+    def reset(self):
         self.reg_a = 0x00
         self.reg_x = 0x00
         self.reg_y = 0x00
@@ -15,5 +17,3 @@ class MOS6502:
         self.flag_r = True
         self.flag_v = False
         self.flag_n = False
-
-
